@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<!-- a comment -->
+<!--
+<GridPane fx:id="grid" alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="sample.PatientController"
+        style="-fx-background-image:
+        url(https://media.gettyimages.com/photos/these-hands-will-take-care-of-you-picture-id855467380?s=2048x2048)">
+-->
+<GridPane fx:id="grid" alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1"
+              fx:controller="sample.EmployeeController"
+            prefHeight="600" prefWidth="1200"
+          style="-fx-background-image: url('https://www.bdpinternational.com/uploads/attachments/ck6axr5izcptnksqp75lnejn5-update-images4.0.130.2500.1406.max.png')">
+    <Label fx:id="postalCodeLabel" text="Postal Code (Area)" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="postalCodeText" prefWidth="200" promptText="####" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <TextArea fx:id="employeeListTextArea" prefWidth="830" prefHeight="190"
+              editable="false" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="4" GridPane.rowSpan="1"
+              text="Here comes the informations..">
+
+        <font>
+            <Font name="Courier New" size="12.0" />
+        </font>
+    </TextArea>
+    <Button fx:id="buttonSearch" text="Search" GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#onAddEmployee"/>
+    <Button fx:id="buttonClearAll" text="Clear all fields" GridPane.columnIndex="0" GridPane.rowIndex="6" onAction="#onClearAll"/>
+
+
+
+</GridPane>

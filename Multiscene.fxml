@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- <VBox prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1"
+-->
+<VBox prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.MultisceneController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="For healtcareprofessionel">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Patientregister" onAction="#newPatient" />
+            <MenuItem mnemonicParsing="false" text="Consult patient" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="For decisionmaker">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Incidens by postal code" onAction="#newEmployee" />
+            <MenuItem mnemonicParsing="false" text="Geolocation of patients" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About Clinic App" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <!--
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    -->
+    <AnchorPane>
+    </AnchorPane>
+  </children>
+</VBox>

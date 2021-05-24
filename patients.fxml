@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<!-- a comment -->
+<!--
+<GridPane fx:id="grid" alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="sample.PatientController"
+        style="-fx-background-image:
+        url(https://media.gettyimages.com/photos/these-hands-will-take-care-of-you-picture-id855467380?s=2048x2048)">
+-->
+<GridPane fx:id="grid" alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1"
+              fx:controller="sample.PatientController"
+          prefHeight="600" prefWidth="1200"
+          style="-fx-background-image: url('https://www.bdpinternational.com/uploads/attachments/ck6axr5izcptnksqp75lnejn5-update-images4.0.130.2500.1406.max.png')">
+    <Label fx:id="cprLabel" text="CPR number" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="cprText"  prefWidth="180" promptText="######-####" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <Label fx:id="labelFirstName" text="First Name" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="firstNameText"  prefWidth="180" promptText="First Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Label fx:id="labelLastName" text="Last Name" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    <TextField fx:id="lastNameText" prefWidth="200" promptText="Last Name" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+    <TextArea fx:id="patientListTextArea" prefWidth="550" prefHeight="200"
+              editable="false" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="4" GridPane.rowSpan="1"
+              text="Do nit be alarmed! This massage is made bu a machine">
+        <font>
+            <Font name="Courier New" size="12.0" />
+        </font>
+    </TextArea>
+    <Button fx:id="buttonAdd" text="Add patient" GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#onAddPatient"/>
+    <Button fx:id="buttonClearAll" text="Clear all" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#onClearAll"/>
+    <Button fx:id="buttonAccessLocation" text="Access Patient's Location" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <Button fx:id="buttonViewTestResult" text="View Patient's Testresults" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+    <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+</GridPane>
